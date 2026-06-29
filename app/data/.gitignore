@@ -1,0 +1,4 @@
+# Runtime SQLite database — created automatically, never committed.
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

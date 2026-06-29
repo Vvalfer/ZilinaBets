@@ -1,0 +1,126 @@
+{
+    "steps": [
+        {
+            "request": {
+                "game": "blackjack",
+                "bet": {
+                    "amount": 10
+                }
+            },
+            "response": {
+                "status": "in_progress",
+                "payout": 0,
+                "outcome": {
+                    "player": [
+                        {
+                            "rank": "Q",
+                            "suit": "C"
+                        },
+                        {
+                            "rank": "J",
+                            "suit": "D"
+                        }
+                    ],
+                    "playerTotal": 20,
+                    "dealerUpCard": {
+                        "rank": "9",
+                        "suit": "H"
+                    }
+                },
+                "state": {
+                    "bet": 10,
+                    "shoe": "<308 cards kept server-side>",
+                    "player": [
+                        {
+                            "rank": "Q",
+                            "suit": "C"
+                        },
+                        {
+                            "rank": "J",
+                            "suit": "D"
+                        }
+                    ],
+                    "dealer": [
+                        {
+                            "rank": "9",
+                            "suit": "H"
+                        },
+                        {
+                            "rank": "10",
+                            "suit": "H"
+                        }
+                    ]
+                },
+                "nextActions": [
+                    "hit",
+                    "stand",
+                    "double"
+                ]
+            }
+        },
+        {
+            "request": {
+                "game": "blackjack",
+                "bet": {
+                    "action": "stand"
+                },
+                "state": {
+                    "bet": 10,
+                    "shoe": "<308 cards kept server-side>",
+                    "player": [
+                        {
+                            "rank": "Q",
+                            "suit": "C"
+                        },
+                        {
+                            "rank": "J",
+                            "suit": "D"
+                        }
+                    ],
+                    "dealer": [
+                        {
+                            "rank": "9",
+                            "suit": "H"
+                        },
+                        {
+                            "rank": "10",
+                            "suit": "H"
+                        }
+                    ]
+                }
+            },
+            "response": {
+                "status": "resolved",
+                "payout": 20,
+                "outcome": {
+                    "player": [
+                        {
+                            "rank": "Q",
+                            "suit": "C"
+                        },
+                        {
+                            "rank": "J",
+                            "suit": "D"
+                        }
+                    ],
+                    "dealer": [
+                        {
+                            "rank": "9",
+                            "suit": "H"
+                        },
+                        {
+                            "rank": "10",
+                            "suit": "H"
+                        }
+                    ],
+                    "playerTotal": 20,
+                    "dealerTotal": 19,
+                    "result": "win",
+                    "stake": 10
+                },
+                "state": null,
+                "nextActions": []
+            }
+        }
+    ]
+}

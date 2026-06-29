@@ -1,0 +1,9 @@
+# The database + logs live here. This folder is outside the web root already,
+# but deny all web access defensively in case the document root is misconfigured.
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>

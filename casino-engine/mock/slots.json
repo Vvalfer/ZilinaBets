@@ -1,0 +1,27 @@
+{
+    "request": {
+        "game": "slots",
+        "bet": {
+            "amount": 5
+        }
+    },
+    "response": {
+        "status": "resolved",
+        "payout": 70,
+        "outcome": {
+            "reels": [
+                "lemon",
+                "lemon",
+                "lemon"
+            ],
+            "win": true,
+            "symbol": "lemon",
+            "multiplier": 14,
+            "bet": {
+                "amount": 5
+            }
+        },
+        "state": null,
+        "nextActions": []
+    }
+}

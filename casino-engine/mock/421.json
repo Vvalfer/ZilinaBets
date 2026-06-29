@@ -1,0 +1,73 @@
+{
+    "steps": [
+        {
+            "request": {
+                "game": "421",
+                "bet": {
+                    "amount": 10
+                }
+            },
+            "response": {
+                "status": "in_progress",
+                "payout": 0,
+                "outcome": {
+                    "dice": [
+                        3,
+                        3,
+                        1
+                    ],
+                    "rerollsLeft": 2
+                },
+                "state": {
+                    "bet": 10,
+                    "dice": [
+                        3,
+                        3,
+                        1
+                    ],
+                    "rerollsLeft": 2
+                },
+                "nextActions": [
+                    "reroll",
+                    "stand"
+                ]
+            }
+        },
+        {
+            "request": {
+                "game": "421",
+                "bet": {
+                    "action": "stand"
+                },
+                "state": {
+                    "bet": 10,
+                    "dice": [
+                        3,
+                        3,
+                        1
+                    ],
+                    "rerollsLeft": 2
+                }
+            },
+            "response": {
+                "status": "resolved",
+                "payout": 0,
+                "outcome": {
+                    "dice": [
+                        3,
+                        3,
+                        1
+                    ],
+                    "combo": "nothing",
+                    "multiplier": 0,
+                    "win": false,
+                    "bet": {
+                        "amount": 10
+                    }
+                },
+                "state": null,
+                "nextActions": []
+            }
+        }
+    ]
+}

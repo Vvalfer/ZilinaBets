@@ -1,0 +1,6 @@
+.git
+.gitignore
+app/data/
+**/vendor/
+**/node_modules/
+*.log

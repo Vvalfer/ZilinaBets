@@ -1,0 +1,27 @@
+{
+    "request": {
+        "game": "roulette",
+        "bet": {
+            "amount": 10,
+            "type": "straight",
+            "value": 17
+        }
+    },
+    "response": {
+        "status": "resolved",
+        "payout": 360,
+        "outcome": {
+            "number": 17,
+            "color": "black",
+            "win": true,
+            "multiplier": 36,
+            "bet": {
+                "type": "straight",
+                "value": 17,
+                "amount": 10
+            }
+        },
+        "state": null,
+        "nextActions": []
+    }
+}
